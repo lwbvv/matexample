@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		28C2433581D11AD058B760F6 /* Pods_MATTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE3B2CDFD78D379BC08DEF17 /* Pods_MATTest.framework */; };
+		500C1C7424BD68820024C4F7 /* LaunchScreenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500C1C7324BD68820024C4F7 /* LaunchScreenManager.swift */; };
+		500C1C7724BD6B200024C4F7 /* NetworkStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500C1C7624BD6B200024C4F7 /* NetworkStatus.swift */; };
+		500C1C7924BD6D0A0024C4F7 /* AppDelegateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500C1C7824BD6D0A0024C4F7 /* AppDelegateManager.swift */; };
+		5020A12A24BC0B2500252075 /* PermissionAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5020A12824BC0B2500252075 /* PermissionAlert.swift */; };
+		5020A12B24BC0B2500252075 /* PermissionAlert.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5020A12924BC0B2500252075 /* PermissionAlert.xib */; };
+		5020A12D24BC2A4000252075 /* AppStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5020A12C24BC2A4000252075 /* AppStatus.swift */; };
+		5020A13324BC465300252075 /* TutorialPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5020A13124BC465300252075 /* TutorialPageVC.swift */; };
+		5020A13424BC465300252075 /* TutorialPageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5020A13224BC465300252075 /* TutorialPageVC.xib */; };
+		5020A13924BC85F700252075 /* NaviAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5020A13824BC85F700252075 /* NaviAnimation.swift */; };
 		50588DE824B6AA5600D5A3F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50588DE724B6AA5600D5A3F9 /* AppDelegate.swift */; };
 		50588DEC24B6AA5600D5A3F9 /* Intro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50588DEB24B6AA5600D5A3F9 /* Intro.swift */; };
 		50588DEF24B6AA5600D5A3F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50588DED24B6AA5600D5A3F9 /* Main.storyboard */; };
@@ -23,12 +32,20 @@
 		508BF80224B85AF100E6376C /* BaseNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508BF80124B85AF100E6376C /* BaseNC.swift */; };
 		50FACD6224B7F16300A824AE /* Permission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FACD6124B7F16300A824AE /* Permission.swift */; };
 		50FACD6424B7F3F900A824AE /* ConsoleLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FACD6324B7F3F900A824AE /* ConsoleLog.swift */; };
-		50FACD6A24B7F6AB00A824AE /* BasicAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FACD6924B7F6AB00A824AE /* BasicAlertVC.swift */; };
 		50FACD6C24B7F7C900A824AE /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FACD6B24B7F7C900A824AE /* Alert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2EA803BD14FB5E65F4A3276F /* Pods-MATTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MATTest.debug.xcconfig"; path = "Target Support Files/Pods-MATTest/Pods-MATTest.debug.xcconfig"; sourceTree = "<group>"; };
+		500C1C7324BD68820024C4F7 /* LaunchScreenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenManager.swift; sourceTree = "<group>"; };
+		500C1C7624BD6B200024C4F7 /* NetworkStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkStatus.swift; sourceTree = "<group>"; };
+		500C1C7824BD6D0A0024C4F7 /* AppDelegateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateManager.swift; sourceTree = "<group>"; };
+		5020A12824BC0B2500252075 /* PermissionAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionAlert.swift; sourceTree = "<group>"; };
+		5020A12924BC0B2500252075 /* PermissionAlert.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PermissionAlert.xib; sourceTree = "<group>"; };
+		5020A12C24BC2A4000252075 /* AppStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStatus.swift; sourceTree = "<group>"; };
+		5020A13124BC465300252075 /* TutorialPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialPageVC.swift; sourceTree = "<group>"; };
+		5020A13224BC465300252075 /* TutorialPageVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TutorialPageVC.xib; sourceTree = "<group>"; };
+		5020A13824BC85F700252075 /* NaviAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaviAnimation.swift; sourceTree = "<group>"; };
 		50588DE424B6AA5600D5A3F9 /* MATTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MATTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50588DE724B6AA5600D5A3F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50588DEB24B6AA5600D5A3F9 /* Intro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intro.swift; sourceTree = "<group>"; };
@@ -46,7 +63,6 @@
 		508BF80124B85AF100E6376C /* BaseNC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNC.swift; sourceTree = "<group>"; };
 		50FACD6124B7F16300A824AE /* Permission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Permission.swift; sourceTree = "<group>"; };
 		50FACD6324B7F3F900A824AE /* ConsoleLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsoleLog.swift; sourceTree = "<group>"; };
-		50FACD6924B7F6AB00A824AE /* BasicAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicAlertVC.swift; sourceTree = "<group>"; };
 		50FACD6B24B7F7C900A824AE /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		88BD4DAA84B5119CC0578FD9 /* Pods-MATTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MATTest.release.xcconfig"; path = "Target Support Files/Pods-MATTest/Pods-MATTest.release.xcconfig"; sourceTree = "<group>"; };
 		EE3B2CDFD78D379BC08DEF17 /* Pods_MATTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MATTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,6 +80,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		500C1C7224BD63300024C4F7 /* LeeUtil */ = {
+			isa = PBXGroup;
+			children = (
+				50FACD6324B7F3F900A824AE /* ConsoleLog.swift */,
+				50FACD6624B7F5BF00A824AE /* Alert */,
+				50588DFB24B7012B00D5A3F9 /* Permission */,
+				50588DFD24B7069A00D5A3F9 /* LocalData */,
+				5020A13524BC819000252075 /* Animation */,
+				500C1C7324BD68820024C4F7 /* LaunchScreenManager.swift */,
+				500C1C7624BD6B200024C4F7 /* NetworkStatus.swift */,
+			);
+			path = LeeUtil;
+			sourceTree = "<group>";
+		};
+		500C1C7524BD6AA10024C4F7 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		5020A13524BC819000252075 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				5020A13824BC85F700252075 /* NaviAnimation.swift */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
 		50588DDB24B6AA5600D5A3F9 = {
 			isa = PBXGroup;
 			children = (
@@ -85,10 +130,9 @@
 		50588DE624B6AA5600D5A3F9 /* MATTest */ = {
 			isa = PBXGroup;
 			children = (
-				50FACD6624B7F5BF00A824AE /* Alert */,
+				500C1C7524BD6AA10024C4F7 /* Manager */,
+				500C1C7224BD63300024C4F7 /* LeeUtil */,
 				50FACD6524B7F40600A824AE /* Base */,
-				50588DFD24B7069A00D5A3F9 /* LocalData */,
-				50588DFB24B7012B00D5A3F9 /* Permission */,
 				508BF7F824B831C500E6376C /* View */,
 				50588DE724B6AA5600D5A3F9 /* AppDelegate.swift */,
 				50588DF024B6AA5700D5A3F9 /* Assets.xcassets */,
@@ -112,6 +156,8 @@
 				50588DF224B6AA5700D5A3F9 /* LaunchScreen.storyboard */,
 				50588DEB24B6AA5600D5A3F9 /* Intro.swift */,
 				50588DED24B6AA5600D5A3F9 /* Main.storyboard */,
+				5020A12824BC0B2500252075 /* PermissionAlert.swift */,
+				5020A12924BC0B2500252075 /* PermissionAlert.xib */,
 			);
 			path = Intro;
 			sourceTree = "<group>";
@@ -120,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				50588DFE24B7072E00D5A3F9 /* LocalData.swift */,
+				5020A12C24BC2A4000252075 /* AppStatus.swift */,
 			);
 			path = LocalData;
 			sourceTree = "<group>";
@@ -130,6 +177,7 @@
 				50588DFC24B7012D00D5A3F9 /* Intro */,
 				508BF7F924B8322000E6376C /* Tutorial */,
 				508BF7FA24B849B300E6376C /* Sign */,
+				500C1C7824BD6D0A0024C4F7 /* AppDelegateManager.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -139,6 +187,8 @@
 			children = (
 				50588E0224B72B3900D5A3F9 /* Tutorial.swift */,
 				50588E0324B72B3900D5A3F9 /* Tutorial.xib */,
+				5020A13124BC465300252075 /* TutorialPageVC.swift */,
+				5020A13224BC465300252075 /* TutorialPageVC.xib */,
 			);
 			path = Tutorial;
 			sourceTree = "<group>";
@@ -156,7 +206,6 @@
 		50FACD6524B7F40600A824AE /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				50FACD6324B7F3F900A824AE /* ConsoleLog.swift */,
 				508BF80124B85AF100E6376C /* BaseNC.swift */,
 			);
 			path = Base;
@@ -165,7 +214,6 @@
 		50FACD6624B7F5BF00A824AE /* Alert */ = {
 			isa = PBXGroup;
 			children = (
-				50FACD6924B7F6AB00A824AE /* BasicAlertVC.swift */,
 				50FACD6B24B7F7C900A824AE /* Alert.swift */,
 			);
 			path = Alert;
@@ -251,7 +299,9 @@
 				50588DF424B6AA5700D5A3F9 /* LaunchScreen.storyboard in Resources */,
 				50588E0524B72B3900D5A3F9 /* Tutorial.xib in Resources */,
 				50588DF124B6AA5700D5A3F9 /* Assets.xcassets in Resources */,
+				5020A12B24BC0B2500252075 /* PermissionAlert.xib in Resources */,
 				508BF7FC24B84A3000E6376C /* Sign.storyboard in Resources */,
+				5020A13424BC465300252075 /* TutorialPageVC.xib in Resources */,
 				50588DEF24B6AA5600D5A3F9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -307,12 +357,18 @@
 			files = (
 				508BF80024B84D2100E6376C /* LoginVC.swift in Sources */,
 				50FACD6C24B7F7C900A824AE /* Alert.swift in Sources */,
+				500C1C7924BD6D0A0024C4F7 /* AppDelegateManager.swift in Sources */,
 				508BF7FE24B84AAD00E6376C /* SignNC.swift in Sources */,
 				508BF80224B85AF100E6376C /* BaseNC.swift in Sources */,
-				50FACD6A24B7F6AB00A824AE /* BasicAlertVC.swift in Sources */,
+				500C1C7724BD6B200024C4F7 /* NetworkStatus.swift in Sources */,
 				50588E0124B7137F00D5A3F9 /* LocationPermission.swift in Sources */,
+				5020A12D24BC2A4000252075 /* AppStatus.swift in Sources */,
 				50588DEC24B6AA5600D5A3F9 /* Intro.swift in Sources */,
 				50FACD6224B7F16300A824AE /* Permission.swift in Sources */,
+				5020A13324BC465300252075 /* TutorialPageVC.swift in Sources */,
+				5020A13924BC85F700252075 /* NaviAnimation.swift in Sources */,
+				500C1C7424BD68820024C4F7 /* LaunchScreenManager.swift in Sources */,
+				5020A12A24BC0B2500252075 /* PermissionAlert.swift in Sources */,
 				50588DE824B6AA5600D5A3F9 /* AppDelegate.swift in Sources */,
 				50588DFF24B7072E00D5A3F9 /* LocalData.swift in Sources */,
 				50588E0424B72B3900D5A3F9 /* Tutorial.swift in Sources */,

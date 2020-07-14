@@ -13,13 +13,17 @@ class BaseNC: UINavigationController, UIGestureRecognizerDelegate//스와이프�
     
     var autoRotate = false
     var orientationMask = UIInterfaceOrientationMask.portrait
-    
+    var isSwipePop = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.interactivePopGestureRecognizer?.delegate = self
+        self.isNavigationBarHidden = true
+        
+        self.navigationController?.interactivePopGestureRecognizer?.isEnabled = self.isSwipePop
     }
+    
     
     //화면 회전 불가능하게 막음
     override var shouldAutorotate: Bool {

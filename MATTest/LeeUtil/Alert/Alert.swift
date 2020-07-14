@@ -9,21 +9,42 @@
 import UIKit
 
 
-
-func basicAlert (controller: UIViewController,title: String, message: String) {
-    let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-//    let aaa = UIAlertController(nibName: <#T##String?#>, bundle: <#T##Bundle?#>)
-    let success = UIAlertAction(title: "확인", style: .default, handler: {action in
-        Log("success")
-        let tutorialVC = Tutorial(nibName: "Tutorial", bundle: nil)
-        tutorialVC.modalTransitionStyle = .coverVertical
-        controller.present(tutorialVC, animated: true, completion: nil)
+//네트워크 상태 확인하는 알럿 함수
+func netWorkStatusAlert (controller: UIViewController, handler : (() -> ())?) {
+    Log("Func netWorkStatusAlert")
+    let alert = UIAlertController(title: "네트워크", message: "네트워크 상태를 확인해 주세요", preferredStyle: .alert)
+    let success = UIAlertAction(title: "다시시도", style: .default, handler: {action in
+        if !NetworkStatus.checkDeviceNetworkStatus(){
+            netWorkStatusAlert(controller: controller, handler: nil)
+        }else {
+            if let action = handler { action() }
+        }
+        alert.dismiss(animated: true, completion: nil)
         
     })
+    alert.addAction(success)
+    controller.present(alert, animated: true, completion: nil)
+}
+
+func basicAlert (controller: UIViewController , title: String, message: String, handler: (() -> ())? ) {
+    let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+    
+    let success = UIAlertAction(title: "확인", style: .default, handler: {action in
+        Log("success")
+        if let block = handler { block() }
+        alert.dismiss(animated: true, completion: nil)
+    })
+    
     let cancel = UIAlertAction(title: "취소", style: .cancel, handler: nil)
     alert.addAction(success)
     alert.addAction(cancel)
     controller.present(alert, animated: true, completion: nil)
+}
+
+func customAlert (_ nibName: String, controller: UIViewController) {
+    let alert = UIAlertController(nibName: nibName, bundle: nil)
+    controller.present(alert, animated: true, completion: nil)
+    
 }
 
 

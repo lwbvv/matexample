@@ -16,9 +16,8 @@ class LoginVC: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
         let viewC = Tutorial(nibName: "Tutorial", bundle: nil)
-              
+        self.dismiss(animated: true, completion: nil)
         self.navigationController?.pushViewController(viewC, animated: true)
     }
 }

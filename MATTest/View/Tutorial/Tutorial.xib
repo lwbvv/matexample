@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Tutorial" customModule="MATTest" customModuleProvider="target">
             <connections>
+                <outlet property="container" destination="5hi-9d-YW7" id="Cea-eS-aKJ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,6 +19,10 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5hi-9d-YW7">
+                    <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                    <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mhu-dm-pmh">
                     <rect key="frame" x="50" y="782" width="314" height="30"/>
                     <state key="normal" title="Button"/>
@@ -26,11 +31,15 @@
                     </connections>
                 </button>
             </subviews>
-            <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstAttribute="bottom" secondItem="5hi-9d-YW7" secondAttribute="bottom" id="DZf-fs-k2S"/>
+                <constraint firstItem="5hi-9d-YW7" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="TvR-WB-oB0"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Mhu-dm-pmh" secondAttribute="trailing" constant="50" id="U9V-gR-xGN"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Mhu-dm-pmh" secondAttribute="bottom" constant="50" id="VXu-6H-AhU"/>
+                <constraint firstItem="5hi-9d-YW7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="aJo-rL-NGG"/>
                 <constraint firstItem="Mhu-dm-pmh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="e5N-WB-lDP"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="5hi-9d-YW7" secondAttribute="trailing" id="wLC-R8-Nsn"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="132" y="154"/>
